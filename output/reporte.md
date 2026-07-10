@@ -1,7 +1,6 @@
-[reporte.md](https://github.com/user-attachments/files/29892785/reporte.md)
 # Reporte de predicción TC Oficial — 2026-07-09
 
-*Corrida: 2026-07-10 14:06:48 UTC*
+*Corrida: 2026-07-10 16:12:23 UTC*
 
 ## Situación actual
 

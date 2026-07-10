@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyección TC Oficial — Yanbal Bolivia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --terracota:#CD6340; --terracota-osc:#C45033; --naranja:#F26B43;
+  --salmon:#F0B387; --crema:#FFF9F5; --crema2:#FDF4EF; --oscuro:#1C1F28;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--crema); color:var(--oscuro); font-family:'Inter',system-ui,sans-serif; line-height:1.5; }
+.wrap { max-width:920px; margin:0 auto; padding:48px 24px 40px; }
+.eyebrow { font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--terracota-osc); font-weight:600; margin-bottom:14px; }
+h1 { font-family:'Fraunces',serif; font-weight:300; font-size:clamp(26px,4.2vw,40px); line-height:1.18; max-width:30ch; margin-bottom:8px; }
+h1 strong { font-weight:400; color:var(--terracota-osc); }
+.sub { color:#6E5F55; font-size:15px; margin-bottom:36px; max-width:64ch; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:36px; }
+.kpi { background:var(--crema2); border:1px solid #EFE2D8; border-radius:10px; padding:16px 18px; }
+.kpi .v { font-family:'Fraunces',serif; font-size:28px; font-weight:400; }
+.kpi .l { font-size:12px; color:#8A7A6E; margin-top:2px; }
+.kpi.hoy { background:var(--terracota); border-color:var(--terracota); }
+.kpi.hoy .v, .kpi.hoy .l { color:#fff; }
+.card { background:#fff; border:1px solid #EFE2D8; border-radius:12px; padding:24px; margin-bottom:28px; }
+.card h2 { font-family:'Fraunces',serif; font-weight:400; font-size:19px; margin-bottom:4px; }
+.card .note { font-size:12.5px; color:#8A7A6E; margin-bottom:14px; }
+.legend { display:flex; gap:18px; flex-wrap:wrap; font-size:12.5px; color:#5E5248; margin-top:10px; }
+.legend span::before { content:""; display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+.legend .l-hist::before { background:var(--oscuro); }
+.legend .l-opt::before  { background:#8FA98F; }
+.legend .l-base::before { background:var(--terracota-osc); }
+.legend .l-pes::before  { background:#B3543D; }
+table { width:100%; border-collapse:collapse; font-size:13.5px; }
+th { text-align:left; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8A7A6E; padding:8px 10px; border-bottom:2px solid var(--salmon); }
+td { padding:7px 10px; border-bottom:1px solid #F3E9E1; font-variant-numeric:tabular-nums; }
+td.base { font-weight:600; color:var(--terracota-osc); }
+tr:nth-child(even) td { background:var(--crema2); }
+.foot { font-size:12px; color:#9A8B80; border-top:1px solid #EFE2D8; padding-top:16px; }
+.foot .mark { font-family:'Fraunces',serif; letter-spacing:0.3em; text-align:center; margin-top:18px; color:var(--terracota); font-size:13px; }
+svg { width:100%; height:auto; display:block; }
+@media (max-width:560px) { .wrap { padding:32px 16px; } .card { padding:16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">🦋 Proyección de Tipo de Cambio · Análisis Comercial</div>
+  <h1>El TC oficial cerraría en <strong>10.61 Bs/USD</strong> en una semana si el USDT mantiene su ritmo actual.</h1>
+  <p class="sub">Escenario base: el BCB continúa cerrando ~29% de la brecha con el paralelo por día. Rango a 7 días: 10.46 (USDT se enfría) — 11.13 (ráfaga continúa).</p>
+
+  <div class="kpis">
+    <div class="kpi hoy"><div class="v">10.10</div><div class="l">TC Oficial · 09 Jul 2026</div></div>
+    <div class="kpi"><div class="v">10.50</div><div class="l">USDT paralelo (cierre)</div></div>
+    <div class="kpi"><div class="v">0.40</div><div class="l">Brecha (4.0%)</div></div>
+    <div class="kpi"><div class="v">+5.0%</div><div class="l">Var. proyectada 7 días (base)</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Trayectoria proyectada a 15 días</h2>
+    <div class="note">Histórico post-flotación + tres escenarios según comportamiento del USDT</div>
+    <svg viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Proyección del TC oficial">
+<line x1="52" y1="346.0" x2="840" y2="346.0" stroke="#E8DDD4" stroke-width="1"/><text x="44" y="350.0" text-anchor="end" font-size="11" fill="#9A8B80">9.68</text><line x1="52" y1="263.5" x2="840" y2="263.5" stroke="#E8DDD4" stroke-width="1"/><text x="44" y="267.5" text-anchor="end" font-size="11" fill="#9A8B80">10.34</text><line x1="52" y1="181.0" x2="840" y2="181.0" stroke="#E8DDD4" stroke-width="1"/><text x="44" y="185.0" text-anchor="end" font-size="11" fill="#9A8B80">11.00</text><line x1="52" y1="98.5" x2="840" y2="98.5" stroke="#E8DDD4" stroke-width="1"/><text x="44" y="102.5" text-anchor="end" font-size="11" fill="#9A8B80">11.66</text><line x1="52" y1="16.0" x2="840" y2="16.0" stroke="#E8DDD4" stroke-width="1"/><text x="44" y="20.0" text-anchor="end" font-size="11" fill="#9A8B80">12.32</text><text x="52.0" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">-10d</text><text x="146.6" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">-7d</text><text x="367.2" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">hoy</text><text x="524.8" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">+5d</text><text x="682.4" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">+10d</text><text x="840.0" y="370" text-anchor="middle" font-size="11" fill="#9A8B80">+15d</text>
+<line x1="367.2" y1="16" x2="367.2" y2="346" stroke="#1C1F28" stroke-width="1" stroke-dasharray="4 4" opacity="0.35"/>
+<path d="M 398.7,274.0 L 430.2,254.9 L 461.8,236.3 L 493.3,218.0 L 524.8,200.0 L 556.3,182.1 L 587.8,164.3 L 619.4,146.6 L 650.9,129.0 L 682.4,111.4 L 713.9,93.8 L 745.4,76.3 L 777.0,58.7 L 808.5,41.2 L 840.0,23.7 L 840.0,243.9 L 808.5,244.1 L 777.0,244.2 L 745.4,244.5 L 713.9,244.8 L 682.4,245.2 L 650.9,245.9 L 619.4,246.8 L 587.8,248.1 L 556.3,250.0 L 524.8,252.6 L 493.3,256.2 L 461.8,261.4 L 430.2,268.7 L 398.7,279.1 Z" fill="#F0B387" opacity="0.28"/>
+<path d="M 52.0,339.9 L 83.5,336.2 L 115.0,336.2 L 146.6,333.7 L 178.1,331.2 L 209.6,327.4 L 241.1,327.4 L 272.6,327.4 L 304.2,319.9 L 335.7,311.2 L 367.2,293.7" fill="none" stroke="#1C1F28" stroke-width="2.5"/>
+<path d="M 398.7,279.1 L 430.2,268.7 L 461.8,261.4 L 493.3,256.2 L 524.8,252.6 L 556.3,250.0 L 587.8,248.1 L 619.4,246.8 L 650.9,245.9 L 682.4,245.2 L 713.9,244.8 L 745.4,244.5 L 777.0,244.2 L 808.5,244.1 L 840.0,243.9" fill="none" stroke="#8FA98F" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 398.7,278.0 L 430.2,265.8 L 461.8,256.0 L 493.3,248.1 L 524.8,241.3 L 556.3,235.4 L 587.8,230.2 L 619.4,225.4 L 650.9,220.8 L 682.4,216.6 L 713.9,212.4 L 745.4,208.4 L 777.0,204.5 L 808.5,200.6 L 840.0,196.7" fill="none" stroke="#C45033" stroke-width="2.8"/>
+<path d="M 398.7,274.0 L 430.2,254.9 L 461.8,236.3 L 493.3,218.0 L 524.8,200.0 L 556.3,182.1 L 587.8,164.3 L 619.4,146.6 L 650.9,129.0 L 682.4,111.4 L 713.9,93.8 L 745.4,76.3 L 777.0,58.7 L 808.5,41.2 L 840.0,23.7" fill="none" stroke="#B3543D" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="367.2" cy="293.7" r="4.5" fill="#1C1F28"/>
+<text x="375.2" y="285.7" font-size="12" font-weight="600" fill="#1C1F28">10.10</text>
+</svg>
+    <div class="legend">
+      <span class="l-hist">Histórico oficial</span>
+      <span class="l-opt">Optimista (USDT plano)</span>
+      <span class="l-base">Base (mediana 7d: +0.030/día)</span>
+      <span class="l-pes">Pesimista (P75: +0.140/día)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Detalle diario</h2>
+    <div class="note">Valores proyectados del TC oficial por escenario</div>
+    <table>
+      <thead><tr><th>Día</th><th>Fecha</th><th>Optimista</th><th>Base</th><th>Pesimista</th></tr></thead>
+      <tbody><tr><td>+1</td><td>10 Jul</td><td>10.22</td><td class='base'>10.23</td><td>10.26</td></tr><tr><td>+2</td><td>11 Jul</td><td>10.30</td><td class='base'>10.32</td><td>10.41</td></tr><tr><td>+3</td><td>12 Jul</td><td>10.36</td><td class='base'>10.40</td><td>10.56</td></tr><tr><td>+4</td><td>13 Jul</td><td>10.40</td><td class='base'>10.46</td><td>10.70</td></tr><tr><td>+5</td><td>14 Jul</td><td>10.43</td><td class='base'>10.52</td><td>10.85</td></tr><tr><td>+6</td><td>15 Jul</td><td>10.45</td><td class='base'>10.57</td><td>10.99</td></tr><tr><td>+7</td><td>16 Jul</td><td>10.46</td><td class='base'>10.61</td><td>11.13</td></tr><tr><td>+8</td><td>17 Jul</td><td>10.47</td><td class='base'>10.65</td><td>11.28</td></tr><tr><td>+9</td><td>18 Jul</td><td>10.48</td><td class='base'>10.68</td><td>11.42</td></tr><tr><td>+10</td><td>19 Jul</td><td>10.49</td><td class='base'>10.72</td><td>11.56</td></tr><tr><td>+11</td><td>20 Jul</td><td>10.49</td><td class='base'>10.75</td><td>11.70</td></tr><tr><td>+12</td><td>21 Jul</td><td>10.49</td><td class='base'>10.78</td><td>11.84</td></tr><tr><td>+13</td><td>22 Jul</td><td>10.50</td><td class='base'>10.81</td><td>11.98</td></tr><tr><td>+14</td><td>23 Jul</td><td>10.50</td><td class='base'>10.84</td><td>12.12</td></tr><tr><td>+15</td><td>24 Jul</td><td>10.50</td><td class='base'>10.88</td><td>12.26</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="foot">
+    Modelo estructural brecha × tasa de cierre, calibrado con datos post-flotación (desde 27-jun-2026).
+    El oficial replica al USDT con ~1 día de rezago (correlación 0.87). Proyecciones a +15 días son ilustrativas.
+    Un cambio de política del BCB invalida el modelo. No constituye asesoría financiera.
+    Corrida: 2026-07-10 16:12:23 UTC · Fuente: BCB (scraping diario) + USDT paralelo (carga manual).
+    <div class="mark">Y A N B A L</div>
+  </div>
+</div>
+</body>
+</html>
