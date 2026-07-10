@@ -1,0 +1,32 @@
+name: TC Predictor — Corrida Manual
+
+on:
+  workflow_dispatch:
+    # Solo manual: botón "Run workflow" en la pestaña Actions
+
+jobs:
+  predecir:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install pandas numpy
+
+      - name: Correr predictor
+        run: python predictor/predictor.py
+
+      - name: Commit y push de resultados
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git diff --cached --quiet || git commit -m "Predicción TC: $(date -u '+%Y-%m-%d %H:%M') [manual]"
+          git push
