@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metodología — ¿El USDT guía al TC oficial?</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root {
+  --terracota:#CD6340; --terracota-osc:#C45033; --naranja:#F26B43;
+  --salmon:#F0B387; --crema:#FFF9F5; --crema2:#FDF4EF; --oscuro:#1C1F28;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--crema); color:var(--oscuro); font-family:'Inter',system-ui,sans-serif; line-height:1.5; }
+.wrap { max-width:920px; margin:0 auto; padding:48px 24px 40px; }
+.eyebrow { font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--terracota-osc); font-weight:600; margin-bottom:14px; }
+h1 { font-family:'Fraunces',serif; font-weight:300; font-size:clamp(26px,4.2vw,40px); line-height:1.18; max-width:30ch; margin-bottom:8px; }
+h1 strong { font-weight:400; color:var(--terracota-osc); }
+.sub { color:#6E5F55; font-size:15px; margin-bottom:36px; max-width:64ch; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-bottom:36px; }
+.kpi { background:var(--crema2); border:1px solid #EFE2D8; border-radius:10px; padding:16px 18px; }
+.kpi .v { font-family:'Fraunces',serif; font-size:28px; font-weight:400; }
+.kpi .l { font-size:12px; color:#8A7A6E; margin-top:2px; }
+.kpi.hoy { background:var(--terracota); border-color:var(--terracota); }
+.kpi.hoy .v, .kpi.hoy .l { color:#fff; }
+.card { background:#fff; border:1px solid #EFE2D8; border-radius:12px; padding:24px; margin-bottom:28px; }
+.card h2 { font-family:'Fraunces',serif; font-weight:400; font-size:19px; margin-bottom:4px; }
+.card .note { font-size:12.5px; color:#8A7A6E; margin-bottom:14px; }
+.legend { display:flex; gap:18px; flex-wrap:wrap; font-size:12.5px; color:#5E5248; margin-top:10px; }
+.legend span::before { content:""; display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+.legend .l-hist::before { background:var(--oscuro); }
+.legend .l-opt::before  { background:#8FA98F; }
+.legend .l-base::before { background:var(--terracota-osc); }
+.legend .l-pes::before  { background:#B3543D; }
+.legend .l-vol::before  { background:#F0B387; }
+table { width:100%; border-collapse:collapse; font-size:13.5px; }
+th { text-align:left; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8A7A6E; padding:8px 10px; border-bottom:2px solid var(--salmon); }
+td { padding:7px 10px; border-bottom:1px solid #F3E9E1; font-variant-numeric:tabular-nums; }
+td.base { font-weight:600; color:var(--terracota-osc); }
+tr:nth-child(even) td { background:var(--crema2); }
+.foot { font-size:12px; color:#9A8B80; border-top:1px solid #EFE2D8; padding-top:16px; }
+.foot .mark { font-family:'Fraunces',serif; letter-spacing:0.3em; text-align:center; margin-top:18px; color:var(--terracota); font-size:13px; }
+.foot a { color:var(--terracota-osc); }
+svg { width:100%; height:auto; display:block; }
+@media (max-width:560px) { .wrap { padding:32px 16px; } .card { padding:16px; } }
+
+.tag{display:inline-block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#fff;background:var(--terracota);border-radius:20px;padding:3px 12px;margin-bottom:10px;}
+.big{font-family:'Fraunces',serif;font-size:44px;color:var(--terracota-osc);line-height:1;}
+.big small{font-size:14px;color:#8A7A6E;font-family:'Inter';display:block;margin-top:6px;}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:14px 0;}
+.stat{background:var(--crema2);border-radius:10px;padding:18px;}
+.formula{background:var(--oscuro);color:#F5EFE9;border-radius:10px;padding:18px 22px;font-family:ui-monospace,monospace;font-size:14px;margin:12px 0;}
+.card p{font-size:14.5px;color:#4A4038;margin-bottom:10px;max-width:70ch;}</style></head>
+<body><div class="wrap">
+<div class="eyebrow">🦋 Metodología del modelo · Análisis Comercial</div>
+<h1>¿Por qué proyectamos el oficial mirando al USDT? <strong>La evidencia.</strong></h1>
+<p class="sub">Hipótesis: desde la flotación del 27 de junio, el TC oficial no sigue una senda autónoma — converge hacia el dólar paralelo (USDT), replicando sus movimientos con un día de rezago.</p>
+<div class="card"><div class="tag">Evidencia 1</div><h2>El oficial replica al USDT del día anterior</h2>
+<div class="grid2"><div class="stat"><div class="big">0.16<small>Correlación Δoficial(hoy) vs ΔUSDT(ayer)</small></div></div>
+<div class="stat"><div class="big">-0.08<small>Correlación mismo día</small></div></div></div>
+<p>Cuando la correlación con rezago supera a la simultánea, es la firma de que el paralelo se mueve primero y el oficial lo sigue.</p></div>
+<div class="card"><div class="tag">Evidencia 2</div><h2>El BCB cierra una fracción estable de la brecha</h2>
+<p>El paso diario del oficial es una fracción medible de la brecha del día anterior — actualmente ~23%. No es azar: es una regla de convergencia.</p></div>
+<div class="card"><h2>El modelo en una línea</h2>
+<div class="formula">oficial(t+1) = oficial(t) + [USDT(t) − oficial(t)] × 0.23</div>
+<p>El USDT futuro se escenariza con percentiles reales de su variación diaria (fuente: rolling-returns de la API). Volatilidad diaria observada: 0.089 Bs sobre 90 muestras.</p></div>
+<div class="card"><h2>Límites</h2>
+<p><strong>Historia corta.</strong> Régimen flexible reciente; correlaciones sugestivas, no concluyentes.</p>
+<p><strong>El USDT es exógeno.</strong> El modelo no lo predice, lo escenariza. Ahí vive la incertidumbre.</p>
+<p><strong>Riesgo de régimen.</strong> Un cambio de política del BCB invalida la tasa de cierre histórica.</p>
+<p><strong>Convergencia = fin del patrón.</strong> Cuando la brecha llegue a ~0, el modelo se reemplaza por uno de flotación.</p></div>
+<div class="foot">Datos: API dolarbluebolivia (Backend V3). Corrida: 2026-07-29 01:26:39 UTC. <a href="index.html">← Volver al dashboard</a><div class="mark">Y A N B A L</div></div>
+</div></body></html>
