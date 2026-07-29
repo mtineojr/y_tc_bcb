@@ -1,13 +1,11 @@
-name: TC Predictor — Corrida Manual
+name: TC Predictor v2 — Corrida Manual
 
 on:
   workflow_dispatch:
-    # Solo manual: botón "Run workflow" en la pestaña Actions
 
 jobs:
   predecir:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -18,9 +16,11 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install pandas numpy
+        run: pip install pandas numpy requests
 
       - name: Correr predictor
+        env:
+          DOLARBLUE_API_KEY: ${{ secrets.DOLARBLUE_API_KEY }}
         run: python predictor/predictor.py
 
       - name: Commit y push de resultados
@@ -28,5 +28,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/ docs/
-          git diff --cached --quiet || git commit -m "Predicción TC: $(date -u '+%Y-%m-%d %H:%M') [manual]"
+          git diff --cached --quiet || git commit -m "Predicción TC v2: $(date -u '+%Y-%m-%d %H:%M') [manual]"
           git push
